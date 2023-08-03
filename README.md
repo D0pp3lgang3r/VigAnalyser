@@ -14,7 +14,7 @@ Extracted from "An Introduction To Mathematical Cryptography"<br>
 Let ciphertext be : <br>`zpgdlrjlajkpylxzpyyglrjgdlrzhzqyjzqrepvmswrzyrigzhzvregkwivssaoltnliuwoldieaqewfiiykhbjowrhdogcqhkwajyaggemisrzqoqhoavlkbjofrylvpsrtgiuavmswlzgmsevwpcdmjsvjqbrnklpcfiowhvkxjbjpmfkrqthtkozrgqihbmqsbivdardymqmpbunivxmtzwqvgefjhucborvwpcdxuwftqmoowjipdsfluqmoeavljgqealrktiwvextvkrrgxani`<br>
 The tool will first analyse trigrams and get their positions to calculate differences :<br>
 <p align="center" width=300>
-  <img src="trigrams.png">
+  <img src="trigrams.png" width=300>
 </p>
 As we can see most of the differences are divisible by 7 so our keylength is probably 7. Then to be sure of the keylength we can calculate the Index of Coincidence of each substring built from the ciphertext, here is the result by keylength:
 <p align="center">
@@ -22,6 +22,6 @@ As we can see most of the differences are divisible by 7 so our keylength is pro
 </p>
 From the above picture 7 is the right keylength because the average for that keylength is close to 0.068, finally we get thoses equations : 
 <p align="center" width=300>
-  <img src="equations.png">
+  <img src="equations.png" width=300>
 </p>
 No you can choose the exact value of β1, by trying only 26 possibilities it will give you the correct keyword cause of the relations. 
